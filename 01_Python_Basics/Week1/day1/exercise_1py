@@ -1,0 +1,2 @@
+print("exercise 1: hello world ".title())
+print("Hello World \n"*4)
