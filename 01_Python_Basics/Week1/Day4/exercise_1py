@@ -1,0 +1,7 @@
+print("exercise 1: What Are You Learning? ")
+def display_message():
+    """Displays a message about what is being learned."""
+    print("I am learning about functions in Python.")
+
+# Call the function
+display_message()
