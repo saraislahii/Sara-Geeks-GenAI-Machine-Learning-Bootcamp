@@ -1,0 +1,10 @@
+Exercise 1 : Understanding Data Visualization
+Instructions
+
+1-	Explain why data visualization is important in data analysis:
+
+It helps us transforming raw numbers into visual stories that are easier to comprehend and analyze.
+
+2- Describe the purpose of a line graph in data visualization.
+
+Purpose: Line plots are used to display quantitative values over a continuous interval or time span. They are ideal for showing trends and changes over time.
