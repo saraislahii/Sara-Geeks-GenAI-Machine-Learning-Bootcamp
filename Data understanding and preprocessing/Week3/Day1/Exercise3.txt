@@ -1,0 +1,54 @@
+Column Types
+1. index
+
+Type: Quantitative (discrete)
+Reasoning:
+This is simply a numeric row identifier. It takes integer values, even though it doesn’t represent a real-world measurement.
+
+2. Year
+
+Type: Quantitative (discrete)
+Reasoning:
+Years are numeric and ordered. Even though they label time periods, they behave like numerical values (e.g., you can calculate differences between years).
+
+3. Period
+
+Type: Qualitative (categorical)
+Reasoning:
+The value is a label such as "Annual." There’s no inherent numeric meaning or ordering.
+
+4. Avg hrs per day sleeping
+
+Type: Quantitative (continuous)
+Reasoning:
+This is a numerical measurement representing average hours spent sleeping. It can take decimal values and supports arithmetic.
+
+5. Standard Error
+
+Type: Quantitative (continuous)
+Reasoning:
+A numerical statistical estimate. Continuous and mathematical operations are meaningful.
+
+6. Type of Days
+
+Type: Qualitative (categorical)
+Reasoning:
+Values like “All days” describe groups of days. These are labels with no numeric interpretation.
+
+7. Age Group
+
+Type: Qualitative (categorical)
+Reasoning:
+Categories such as “15 years and over.” Even though numbers appear in the text, the column represents groups, not actual numeric ages.
+
+8. Activity
+
+Type: Qualitative (categorical)
+Reasoning:
+Describes the type of activity—here always “Sleeping.” Purely a descriptive label.
+
+9. Sex
+
+Type: Qualitative (categorical)
+Reasoning:
+Values like “Both,” “Male,” or “Female” identify groups, not numeric measures.

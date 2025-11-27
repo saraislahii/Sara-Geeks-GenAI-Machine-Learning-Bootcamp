@@ -1,0 +1,56 @@
+Iris Dataset — Data Type Classification
+
+The Iris dataset typically contains the following columns:
+
+Id
+
+SepalLengthCm
+
+SepalWidthCm
+
+PetalLengthCm
+
+PetalWidthCm
+
+Species
+
+Below is a full classification of each column as qualitative or quantitative, with explanations.
+---------------------------------------
+ Quantitative Columns (Numerical data)
+1. Id
+
+Type: Quantitative (discrete)
+
+Why: It consists of integer identifiers. Although it doesn’t represent a real measurement, it is numeric.
+
+2. SepalLengthCm
+
+Type: Quantitative (continuous)
+
+Why: Represents the measured length of the sepal in centimeters. You can calculate averages, differences, etc.
+
+3. SepalWidthCm
+
+Type: Quantitative (continuous)
+
+Why: A real numerical measurement of sepal width.
+
+4. PetalLengthCm
+
+Type: Quantitative (continuous)
+
+Why: A measurable physical quantity (petal length).
+
+5. PetalWidthCm
+
+Type: Quantitative (continuous)
+
+Why: Also a numerical measurement representing the width of the petal.
+-----------------------------------
+Qualitative Columns (Categorical data)
+6. Species
+
+Type: Qualitative (categorical)
+
+Why: This column contains labels describing the flower species (e.g., Iris-setosa, Iris-versicolor, Iris-virginica).
+These are groups not numbers and we do not perform arithmetic on them.

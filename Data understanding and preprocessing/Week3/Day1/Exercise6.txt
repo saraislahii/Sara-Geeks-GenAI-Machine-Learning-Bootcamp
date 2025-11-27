@@ -1,0 +1,31 @@
+
+Columns Useful for Different Types of Analysis:
+
+1. Avg hrs per day sleeping
+---------------------------
+Best for: Trend analysis, group comparison, distribution analysis
+Why:
+
+This is your main measure of sleep behavior.
+
+You can compare it across age groups, sexes, and years.
+
+You can also study whether Americans are sleeping more or less over time.
+
+2. Sex
+------
+Best for: Group comparison
+Why:
+
+You can compare whether males, females, or “Both” groups sleep differently.
+
+Useful for demographic insights.
+
+3. Age Group
+------------
+Best for: Group comparison, demographic analysis
+Why:
+
+Different age groups may have different sleep patterns.
+
+Allows you to answer questions like: “Do teens sleep more than adults?”
