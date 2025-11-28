@@ -1,0 +1,22 @@
+👩‍🏫 👩🏿‍🏫 What You’ll learn
+In these exercises, you will learn how to use Seaborn, a powerful data visualization library in Python,
+for exploring and understanding data through visualization. Specifically, you will:
+
+Learn how to visualize the distribution of data using histograms.
+Understand how to compare data across different categories using bar plots.
+Explore relationships between numerical data points with scatter plots.
+Discover patterns in your data using pair plots and heatmaps.
+Analyze data distributions and relationships across subgroups with FacetGrid.
+
+
+🛠️ What you will create
+By completing these exercises, you will create a series of visualizations that will help you uncover 
+insights from the student mental health dataset. These include:
+
+Histograms to understand the distribution of students’ CGPA.
+Bar plots to compare anxiety levels across different genders.
+Scatter plots to investigate the relationship between age and the occurrence of panic attacks.
+Pair plots to visualize pairwise relationships and distributions across multiple variables, highlighting
+mental health conditions.
+Heatmaps to visualize the correlation matrix of students’ age, CGPA, and mental health status indicators.
+FacetGrids to analyze the distribution of CGPA across different levels of depression status.
