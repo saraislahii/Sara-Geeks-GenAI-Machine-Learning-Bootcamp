@@ -1,0 +1,43 @@
+Exercise 4 – Designing Machine Learning Solutions for Specific Problems
+
+1. Predicting Stock Prices
+
+Type of ML:
+This problem is best solved using supervised learning, because we have historical labeled data (past prices) and we want to predict a continuous numerical value (a future price).
+
+Input data:
+The input data consists of historical stock prices, trading volume, technical indicators, and possibly external features such as economic trends or news sentiment.
+
+Output:
+The model outputs a numerical prediction that estimates the future price of the stock at a specific point in time.
+
+Learning signal or objective:
+The learning objective is to minimize a regression loss function, such as mean squared error, so that predicted prices are as close as possible to actual future prices.
+
+2. Organizing a Library of Books into Categories
+
+Type of ML:
+This problem is best solved using unsupervised learning, because the goal is to group books based on their similarity without predefined labels.
+
+Input data:
+The input data consists of features extracted from each book, such as text embeddings, keywords, summaries, or metadata like authors and topics.
+
+Output:
+The model outputs clusters that group books into similar categories or genres based on their learned similarities.
+
+Learning signal or objective:
+The learning objective is to maximize within-cluster similarity and minimize between-cluster similarity, using algorithms like k-means or hierarchical clustering.
+
+3. Programming a Robot to Navigate a Maze
+
+Type of ML:
+This scenario is best suited for reinforcement learning, because the robot learns by interacting with the environment and receiving rewards or penalties based on its actions.
+
+Input data:
+The input data consists of the robot’s current state, such as its position in the maze, nearby walls, and possible available actions.
+
+Output:
+The output is an action selected by the robot—such as moving forward, turning left, or turning right—in order to progress through the maze.
+
+Learning signal or objective:
+The learning objective is to maximize cumulative reward by finding the shortest or safest path, using feedback from reward signals for reaching goals or penalties for hitting walls.

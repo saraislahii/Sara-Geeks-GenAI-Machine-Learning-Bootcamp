@@ -1,0 +1,74 @@
+Exercise 1 – Loan Default Prediction: Problem and Data Collection
+
+1. Problem Statement
+The objective is to predict the probability that a customer will default on a loan within a defined time horizon (e.g., 12 months after disbursement); the target variable is therefore a binary indicator loan_default (default vs. no default), and the prediction will support decisions such as whether to approve a loan application, how much to lend, and at what interest rate.
+
+2. Data to Collect (Types and Why They Matter)
+
+
+a- Personal and Demographic Information
+I would collect data such as age, marital status, number of dependents, and region or city of residence, because these characteristics can correlate with financial stability and spending obligations, which in turn may influence default risk.
+
+
+b- Employment and Income Information
+I would collect employment status, type of employer, job tenure, occupation, monthly income, and additional income sources, because stable employment and higher, consistent income generally indicate greater ability to repay loans.
+
+
+c- Financial Obligations and Assets
+I would collect information on existing debts (other loans, credit cards, overdrafts), monthly debt payments, rent or mortgage payments, savings balances, and owned assets (e.g., property, car), because the balance between obligations and assets affects a borrower’s capacity to absorb new loan payments.
+
+
+d- Credit History and Credit Scores
+I would collect credit bureau scores, number of open credit accounts, age of oldest credit line, history of late payments, defaults, bankruptcies, and credit utilization ratios, because past credit behavior is one of the strongest predictors of future repayment behavior.
+
+
+e- Loan Application and Product Characteristics
+I would collect loan amount, loan duration (tenor), interest rate, type of loan (personal, mortgage, car, business), collateral or guarantees, and repayment schedule (monthly, weekly, balloon payments), because the size, cost, and structure of the loan itself influence the likelihood that a borrower will default.
+
+
+f- Banking Behavior and Transaction Data (if available)
+I would collect account balances over time, inflow and outflow patterns, frequency of overdrafts, and unusual large or irregular transactions, because day-to-day cash-flow patterns give additional insight into the borrower’s real financial health.
+
+
+g- Repayment History and Outcomes (Labels for Training)
+I would collect historical repayment data such as on-time payments, days past due, number of missed installments, restructurings, write-offs, and final loan status (fully paid, defaulted, in collections), because these outcomes define the target variable and provide examples for the model to learn patterns associated with default vs. non-default.
+
+
+h- I would collect regional unemployment rates, inflation, and sector-specific economic indicators relevant to the borrower’s job or business, because broader economic conditions can affect many borrowers’ ability to repay at the same time.
+
+
+
+3. Data Sources and How to Obtain Them
+
+
+a- Internal Loan Origination System
+I would obtain applicant demographics, employment details, declared income, and loan product information from the financial institution’s loan origination system, by extracting data from its database or via internal APIs.
+
+
+b- Core Banking and Transaction Systems
+I would obtain account balances, transaction histories, and internal repayment behavior from the bank’s core systems and transaction databases, by coordinating with IT teams to create secure data extracts or pipelines.
+
+
+c- Collections and Recovery Systems
+I would obtain information on delinquencies, restructuring events, collections actions, and write-offs from collections and recovery systems, because these systems record the final status of loans and define whether a loan is considered in default.
+
+
+d- Credit Bureaus and External Credit Reporting Agencies
+I would obtain credit scores, external loan and credit card histories, and records of past defaults from credit bureaus, by integrating bureau reports through their APIs or batch files under appropriate contracts and legal agreements.
+
+
+e- Open Banking or Bank Statement Aggregators (if used)
+I would obtain additional transaction data from other banks or accounts via open banking APIs or third-party aggregators, with explicit customer consent, to build a more complete view of the borrower’s financial behavior.
+
+
+f- Public and Government Data Sources
+I would obtain macroeconomic indicators, unemployment rates, and regional statistics from central banks, national statistics offices, or international organizations, and link them to each borrower using time and location fields.
+
+
+g- Internal Data Warehouse or Data Lake
+I would integrate all of the above sources into a central data warehouse or data lake, using unique customer and loan identifiers, so that each loan record has consistent, cleaned, and joined features ready for modeling.
+
+
+
+4. Risks and Constraints (Privacy, Regulation, Quality, Bias, Governance)
+This project must respect strict privacy and data protection regulations (such as GDPR or local equivalents), meaning that personal data must be minimized, securely stored, and used only for clearly defined purposes with proper consent and legal basis. Regulatory constraints on fair lending and anti-discrimination limit how certain variables (e.g., gender, ethnicity, or other protected attributes) can be used, and models must be explainable to regulators and customers. Data quality issues such as missing values, inconsistent formats, and incorrect labels (for example, loans misclassified as defaulted or not) can degrade model performance and lead to unfair decisions, so robust validation and cleaning are required. Sampling bias may arise if, for instance, the historical data reflects past approval policies that favored certain groups or products, causing the model to inherit those biases. Finally, strong data governance—including clear ownership, access control, documentation, monitoring, and regular audits—is necessary to ensure that the model remains compliant, fair, and reliable over time.

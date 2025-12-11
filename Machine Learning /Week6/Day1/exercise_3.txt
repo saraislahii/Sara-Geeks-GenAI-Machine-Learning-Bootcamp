@@ -1,0 +1,22 @@
+Exercise 3 – Training, Evaluating, and Optimizing the Model
+
+1. Model Choice
+
+A suitable model for loan default prediction is Logistic Regression, because it produces well-calibrated probabilities, is highly interpretable, and is commonly used in credit-risk modeling where regulatory transparency is important. A second suitable model is Random Forest, because it captures nonlinear relationships, handles mixed data types effectively, and can discover complex interactions between features without heavy preprocessing.
+
+2. Evaluation Plan
+
+I will begin by splitting the data into training and testing sets using an 80/20 ratio to ensure that a portion of the data is held out for unbiased evaluation.
+Next, I will apply k-fold cross-validation on the training data (typically 5 or 10 folds) to estimate how well the model generalizes and to reduce variance in performance estimation.
+I will evaluate the model using ROC-AUC to measure ranking ability, Precision, Recall, and F1-score to evaluate performance on the minority default class, and PR-AUC because it is especially informative when defaults are rare.
+I will choose a decision threshold by examining the precision–recall trade-off and selecting a threshold that aligns with the business objective—for example, preferring higher recall to minimize losses from undetected defaults.
+
+3. Addressing Class Imbalance
+
+I will use stratified sampling in the train/test split and in cross-validation so that both classes are represented proportionally in every fold.
+To further mitigate imbalance, I will enable class weights in models like Logistic Regression or apply resampling techniques such as SMOTE or undersampling to ensure that the model learns the minority class correctly.
+
+4. Hyperparameter Optimization
+
+I will tune hyperparameters using grid search or randomized search applied only on the training set within cross-validation to avoid leaking information into the test set.
+Once the optimal hyperparameters are selected, I will retrain the model on the full training set and evaluate it only once on the untouched test set to produce a fair final performance estimate.

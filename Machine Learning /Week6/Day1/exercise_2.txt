@@ -1,0 +1,40 @@
+1- Justification of Selected Features
+
+Credit_score is a key feature because a borrower’s historical credit behavior strongly influences the likelihood of repayment or default.
+
+Debt_to_income is crucial because it measures the borrower’s existing financial burden, and higher ratios indicate limited capacity to take on additional loan payments.
+
+Annual_income helps predict default because higher, stable income increases the borrower’s ability to repay the loan consistently.
+
+Loan_amount is relevant because larger loans increase monthly payment obligations, making default more likely if the borrower’s income cannot support it.
+
+Interest_rate affects repayment risk because higher interest leads to higher total cost of borrowing, increasing the chance of financial stress and default.
+
+Employment_length is informative because longer job stability typically correlates with more predictable income and lower default risk.
+
+Num_delinquencies directly signals past repayment issues, making it one of the most predictive indicators of future default.
+
+Total_utilization matters because borrowers who are using a high percentage of their available credit are more likely to face liquidity problems and miss payments.
+
+Num_open_accounts helps capture overall credit activity; too few accounts may indicate thin credit history, while too many may signal financial overextension.
+
+Home_ownership is useful because owning a home often indicates stronger financial stability and lower default probability compared to renting.
+
+Purpose is relevant because the reason for the loan (e.g., medical bills vs. home improvement) often correlates with different levels of financial risk.
+
+Term is important because longer-term loans spread repayment over time but may increase the chance of long-term financial instability, affecting default likelihood.
+
+Application_type helps because joint applications may offer more repayment capacity, whereas single applications rely on one income source.
+
+2- Features Excluded and Why
+
+Age is excluded because in many jurisdictions it is considered a protected attribute and cannot be used for credit decisions.
+
+State is excluded because it adds geographic granularity without necessarily improving prediction, and may introduce regional bias.
+
+Zip_code is excluded because it can indirectly encode socioeconomic status or ethnicity, raising fairness and regulatory concerns.
+
+3- Encoding and Missing Value Strategy
+
+Categorical features such as home_ownership, purpose, state, and application_type would be encoded so the model can interpret them numerically.
+Missing values in numerical features would be imputed using the median, while categorical features would be imputed with the most frequent category to avoid introducing artificial.
